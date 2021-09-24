@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Supervisord Monitoring</title>
+	<title>Omisell Supervisord Monitoring</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url('/css/bootstrap.min.css');?>"/>
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url('/css/bootstrap-responsive.min.css');?>"/>
@@ -25,7 +25,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-		  <a class="brand" href="<?php echo site_url('');?>">Support Center</a>
+		  <a class="brand" href="<?php echo site_url('');?>">Omisell Supervisord Center</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
 			<li class="active"><a href="<?php echo site_url();?>">Home</a></li>
