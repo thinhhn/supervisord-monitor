@@ -75,7 +75,7 @@
 							echo '&nbsp;<i>'.$version[$name].'</i>';
 							if(!isset($procs['error'])){
 							?>
-							<span class="server-btns pull-right">
+							<span class="server-btns float-right">
 								<a href="<?php echo site_url('/control/stopall/'.$name); ?>" class="btn btn-sm btn-dark" type="button"><i class="glyphicon glyphicon-stop"></i> Stop all</a>
 								<a href="<?php echo site_url('/control/startall/'.$name); ?>" class="btn btn-sm btn-success" type="button"><i class="glyphicon glyphicon-play"></i> Start all</a>
 								<a href="<?php echo site_url('/control/restartall/'.$name); ?>" class="btn btn-sm btn-primary" type="button"><i class="glyphicon glyphicon-refresh"></i> Restart all</a>
@@ -119,7 +119,7 @@
 									echo $item_name;
 									if($check){
 										$alert = true;
-										echo '<span class="pull-right"><a href="'.site_url('/control/clear/'.$name.'/'.$item_name).'" id="'.$name.'_'.$item_name.
+										echo '<span class="float-right"><a href="'.site_url('/control/clear/'.$name.'/'.$item_name).'" id="'.$name.'_'.$item_name.
 												'" onclick="return false" data-toggle="popover" data-message="'.htmlspecialchars($check).'" data-original-title="'.
 												$item_name.'@'.$name.'" class="pop btn btn-mini btn-danger"><img src="' . base_url('/img/alert_icon.png') . '" /></a></span>';
 									}
@@ -181,13 +181,13 @@
 		$message = $(this).data('message')+"\n"+$time+"\n"+$time.toDateString();
 		$title = $(this).data('original-title');
 		$content = '<div class="well" style="padding:20px;">'+nl2br($message)+'</div>';
-		$content+= '<div class="pull-left"><form method="get" action="<?php echo $this->config->item('redmine_url');?>" style="display:inline" target="_blank">';
+		$content+= '<div class="float-left"><form method="get" action="<?php echo $this->config->item('redmine_url');?>" style="display:inline" target="_blank">';
 		$content+= '<input type="hidden" name="issue[subject]" value="'+$title+'"/>';
 		$content+= '<input type="hidden" name="issue[description]" value="'+$message+'"/>';
 		$content+= '<input type="hidden" name="issue[assigned_to_id]" value="<?php echo $this->config->item('redmine_assigne_id');?>"/>';
 		$content+= '<input type="submit" class="btn btn-small btn-inverse" value="Start New Ticket"/>';
 		$content+= '</form></div>';
-		$content+= '<div class="pull-right"><a href="#" onclick="$(\'#'+$(this).attr('id')+'\').popover(\'hide\');startTimer();" class="btn btn-small btn-primary">ok</a>&nbsp;&nbsp;';
+		$content+= '<div class="float-right"><a href="#" onclick="$(\'#'+$(this).attr('id')+'\').popover(\'hide\');startTimer();" class="btn btn-small btn-primary">ok</a>&nbsp;&nbsp;';
 		$content+= '<a href="'+$(this).attr('href')+'" class="btn btn-small btn-danger">Clear</a> &nbsp; </div>';
 		return $content;
 	}
