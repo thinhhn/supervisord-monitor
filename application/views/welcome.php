@@ -17,7 +17,7 @@
 	</noscript>
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar navbar-dark bg-dark navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -76,9 +76,9 @@
 							if(!isset($procs['error'])){
 							?>
 							<span class="server-btns pull-right">
-								<a href="<?php echo site_url('/control/stopall/'.$name); ?>" class="btn btn-mini btn-inverse" type="button"><i class="glyphicon glyphicon-stop"></i> Stop all</a>
-								<a href="<?php echo site_url('/control/startall/'.$name); ?>" class="btn btn-mini btn-success" type="button"><i class="glyphicon glyphicon-play"></i> Start all</a>
-								<a href="<?php echo site_url('/control/restartall/'.$name); ?>" class="btn btn-mini btn-primary" type="button"><i class="glyphicon glyphicon-refresh"></i> Restart all</a>
+								<a href="<?php echo site_url('/control/stopall/'.$name); ?>" class="btn btn-sm btn-dark" type="button"><i class="glyphicon glyphicon-stop"></i> Stop all</a>
+								<a href="<?php echo site_url('/control/startall/'.$name); ?>" class="btn btn-sm btn-success" type="button"><i class="glyphicon glyphicon-play"></i> Start all</a>
+								<a href="<?php echo site_url('/control/restartall/'.$name); ?>" class="btn btn-sm btn-primary" type="button"><i class="glyphicon glyphicon-refresh"></i> Restart all</a>
 							</span>
 							<?php
 							}
