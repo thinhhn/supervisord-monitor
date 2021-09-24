@@ -110,13 +110,15 @@
 							<tr>
 								<td><?php
 									echo $item_name;
-									if($check){
-										$alert = true;
-										echo '<span class="float-right"><a href="'.site_url('/control/clear/'.$name.'/'.$item_name).'" id="'.$name.'_'.$item_name.
-												'" onclick="return false" data-toggle="popover" data-message="'.htmlspecialchars($check).'" data-original-title="'.
-												$item_name.'@'.$name.'" class="pop btn btn-mini btn-danger"><img src="' . base_url('/img/alert_icon.png') . '" /></a></span>';
-									}
-									?>
+									// if($check){
+									// 	$alert = true;
+									// 	echo '<span class="float-right">
+									// 			<a href="'.site_url('/control/clear/'.$name.'/'.$item_name).'" id="'.$name.'_'.$item_name.
+									// 			'" onclick="return false" data-toggle="popover" data-message="'.htmlspecialchars($check).'" data-original-title="'.
+									// 			$item_name.'@'.$name.'" class="pop btn btn-mini btn-danger"><img src="' . base_url('/img/alert_icon.png') . '" /></a>
+									// 		</span>';
+									// }
+									// ?>
 								</td>
 								<td width="10"><span class="badge badge-<?php echo $class;?>"><?php echo $status;?></span></td>
 								<td width="80" style="text-align:right"><?php echo $uptime;?></td>
