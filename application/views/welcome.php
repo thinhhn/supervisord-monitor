@@ -30,13 +30,15 @@
 					}
 				;?></a>
 			</li>
-			<li class="nav-item"><a href="<?php echo site_url();?>">Refresh <b id="refresh">(<?php echo $this->config->item('refresh');?>)</b> &nbsp;</a></li>
+			<li class="nav-item">
+				<a class="nav-link" href="<?php echo site_url();?>">Refresh <b id="refresh">(<?php echo $this->config->item('refresh');?>)</b> &nbsp;</a>
+			</li>
 		</ul>
       </div>
     </div>
 	
 
-	<div class="container">
+	<div class="container mt-3">
 	
 		<?php
 		if($muted){
