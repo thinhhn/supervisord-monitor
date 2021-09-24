@@ -126,7 +126,7 @@
 									}
 									?>
 								</td>
-								<td width="10"><span class="label label-<?php echo $class;?>"><?php echo $status;?></span></td>
+								<td width="10"><span class="badge badge-<?php echo $class;?>"><?php echo $status;?></span></td>
 								<td width="80" style="text-align:right"><?php echo $uptime;?></td>
 								<td style="width:1%">
 									<!--div class="btn-group">
@@ -141,7 +141,7 @@
 									</div//-->
 									<div class="actions">
 										<?php if($status=='RUNNING'){ ?>
-										<a href="<?php echo site_url('/control/stop/'.$name.'/'.$item_name);?>" class="btn btn-sm btn-dark" type="button"><i class="bi bi-square-fill"></i></a>
+										<a href="<?php echo site_url('/control/stop/'.$name.'/'.$item_name);?>" class="btn btn-sm btn-dark" type="button"><i class="bi bi-stop-fill"></i></a>
 										<a href="<?php echo site_url('/control/restart/'.$name.'/'.$item_name);?>" class="btn btn-sm btn-dark" type="button"><i class="bi bi-arrow-counterclockwise"></i></a>
 										<?php } if($status=='STOPPED' || $status == 'EXITED' || $status=='FATAL'){ ?>
 										<a href="<?php echo site_url('/control/start/'.$name.'/'.$item_name);?>" class="btn btn-sm btn-dark" type="button"><i class="bi bi-play-fill"></i></a>
