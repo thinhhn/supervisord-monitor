@@ -21,13 +21,15 @@
       <div class="navbar navbar-expand">
 	  	<a class="navbar-brand" href="<?php echo site_url('');?>">Omisell Supervisord Center</a>
 		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-			<li class="nav-item"><a href="?mute=<?php echo ($muted?-1:1);?>"><i class="icon-music icon-white"></i>&nbsp;<?php
-				if($muted){
-					echo "Unmute";
-				}else{
-					echo "Mute";
-				}
-			;?></a></li>
+			<li class="nav-item">
+				<a class="nav-link" href="?mute=<?php echo ($muted?-1:1);?>"><i class="icon-music icon-white"></i>&nbsp;<?php
+					if($muted){
+						echo "Unmute";
+					}else{
+						echo "Mute";
+					}
+				;?></a>
+			</li>
 			<li class="nav-item"><a href="<?php echo site_url();?>">Refresh <b id="refresh">(<?php echo $this->config->item('refresh');?>)</b> &nbsp;</a></li>
 		</ul>
       </div>
