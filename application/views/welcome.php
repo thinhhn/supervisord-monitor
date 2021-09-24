@@ -67,7 +67,7 @@
 					}
 					$ui_url = $base_url . $parsed_url['host'] . ':' . $cfg[$name]['port']. '/';
 				?>
-				<div class="span<?php echo ($this->config->item('supervisor_cols')==2?'6':'4');?>">
+				<div class="col-lg<?php echo ($this->config->item('supervisor_cols')==2?'6':'4');?>">
 					<table class="table table-bordered table-condensed table-striped">
 						<tr><th colspan="4">
 							<a href="<?php echo $ui_url; ?>"><?php echo $name; ?></a> <?php if($this->config->item('show_host')){ ?><i><?php echo $parsed_url['host']; ?></i><?php } ?>
@@ -109,8 +109,8 @@
 								list($pid,$uptime) = explode(",",$item['description']);
 							}
 							elseif($status=='STARTING') $class = 'info';
-							elseif($status=='FATAL') { $class = 'important'; $alert = true; }
-							elseif($status=='STOPPED') $class = 'inverse';
+							elseif($status=='FATAL') { $class = 'danger'; $alert = true; }
+							elseif($status=='STOPPED') $class = 'dark';
 							else $class = 'error';
 
 							$uptime = str_replace("uptime ","",$uptime);
