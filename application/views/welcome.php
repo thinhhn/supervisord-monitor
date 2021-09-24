@@ -17,8 +17,8 @@
 	</noscript>
 </head>
 <body>
-	<div class="navbar navbar-dark bg-dark navbar-fixed-top">
-      <div class="navbar navbar-expand">
+	<div class="navbar navbar-dark bg-dark navbar-fixed-top py-0">
+      <div class="navbar navbar-expand pl-0">
 	  	<a class="navbar-brand" href="<?php echo site_url('');?>">Omisell Supervisord Center</a>
 		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 			<li class="nav-item">
