@@ -135,10 +135,10 @@
 									</div//-->
 									<div class="actions">
 										<?php if($status=='RUNNING'){ ?>
-										<a href="<?php echo site_url('/control/stop/'.$name.'/'.$item_name);?>" class="btn btn-sm btn-dark" type="button"><i class="bi bi-stop-fill"></i></a>
-										<a href="<?php echo site_url('/control/restart/'.$name.'/'.$item_name);?>" class="btn btn-sm btn-dark" type="button"><i class="bi bi-arrow-counterclockwise"></i></a>
+										<a href="<?php echo site_url('/control/stop/'.$name.'/'.$item_name);?>" class="btn btn-sm omi-btn-sm btn-dark" type="button"><i class="bi bi-stop-fill"></i></a>
+										<a href="<?php echo site_url('/control/restart/'.$name.'/'.$item_name);?>" class="btn btn-sm omi-btn-sm btn-dark" type="button"><i class="bi bi-arrow-counterclockwise"></i></a>
 										<?php } if($status=='STOPPED' || $status == 'EXITED' || $status=='FATAL'){ ?>
-										<a href="<?php echo site_url('/control/start/'.$name.'/'.$item_name);?>" class="btn btn-sm btn-dark" type="button"><i class="bi bi-play-fill"></i></a>
+										<a href="<?php echo site_url('/control/start/'.$name.'/'.$item_name);?>" class="btn btn-sm omi-btn-sm btn-dark" type="button"><i class="bi bi-play-fill"></i></a>
 										<?php } ?>
 									</div>
 								</td>
