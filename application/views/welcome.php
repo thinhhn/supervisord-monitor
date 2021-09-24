@@ -18,29 +18,25 @@
 </head>
 <body>
 	<div class="navbar navbar-dark bg-dark navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-		  <a class="brand" href="<?php echo site_url('');?>">Omisell Supervisord Center</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-			<li class="active"><a href="<?php echo site_url();?>">Home</a></li>
-              <li><a href="?mute=<?php echo ($muted?-1:1);?>"><i class="icon-music icon-white"></i>&nbsp;<?php
-			if($muted){
-				echo "Unmute";
-			}else{
-				echo "Mute";
-			}
-		;?></a></li>
-		<li><a href="<?php echo site_url();?>">Refresh <b id="refresh">(<?php echo $this->config->item('refresh');?>)</b> &nbsp;</a></li>
-              <li><a href="mailto:martin@lazarov.bg">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
+      <div class="navbar navbar-expand">
+		<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<a class="brand" href="<?php echo site_url('');?>">Omisell Supervisord Center</a>
+		<div class="nav-collapse collapse">
+		<ul class="nav">
+			<li><a href="?mute=<?php echo ($muted?-1:1);?>"><i class="icon-music icon-white"></i>&nbsp;<?php
+				if($muted){
+					echo "Unmute";
+				}else{
+					echo "Mute";
+				}
+			;?></a></li>
+			<li><a href="<?php echo site_url();?>">Refresh <b id="refresh">(<?php echo $this->config->item('refresh');?>)</b> &nbsp;</a></li>
+		</ul>
+		</div>
       </div>
     </div>
 	
