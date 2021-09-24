@@ -59,7 +59,7 @@
 					}
 					$ui_url = $base_url . $parsed_url['host'] . ':' . $cfg[$name]['port']. '/';
 				?>
-				<div class="col-lg-<?php echo ($this->config->item('supervisor_cols')==2?'6':'4');?>">
+				<div class="col-lg-4 col-md-6">
 					<table class="table table-bordered table-condensed table-striped">
 						<tr><th colspan="4">
 							<a href="<?php echo $ui_url; ?>"><?php echo $name; ?></a> <?php if($this->config->item('show_host')){ ?><i><?php echo $parsed_url['host']; ?></i><?php } ?>
