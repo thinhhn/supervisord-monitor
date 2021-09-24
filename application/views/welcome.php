@@ -5,9 +5,11 @@
 	<title>Omisell Supervisord Monitoring</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url('/css/bootstrap.min.css');?>"/>
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url('/css/bootstrap-responsive.min.css');?>"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url('/css/custom.css');?>"/>
-<script type="text/javascript" src="<?php echo base_url('/js/jquery-1.10.1.min.js');?>"></script>
-<script type="text/javascript" src="<?php echo base_url('/js/bootstrap.min.js');?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('/js/jquery-1.10.1.min.js');?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('/js/bootstrap.min.js');?>"></script>
 	<noscript>
 	<?php
 	if($this->config->item('refresh')){ ?>
@@ -75,9 +77,9 @@
 							if(!isset($procs['error'])){
 							?>
 							<span class="server-btns pull-right">
-								<a href="<?php echo site_url('/control/stopall/'.$name); ?>" class="btn btn-mini btn-inverse" type="button"><i class="icon-stop icon-white"></i> Stop all</a>
-								<a href="<?php echo site_url('/control/startall/'.$name); ?>" class="btn btn-mini btn-success" type="button"><i class="icon-play icon-white"></i> Start all</a>
-								<a href="<?php echo site_url('/control/restartall/'.$name); ?>" class="btn btn-mini btn-primary" type="button"><i class="icon icon-refresh icon-white"></i> Restart all</a>
+								<a href="<?php echo site_url('/control/stopall/'.$name); ?>" class="btn btn-mini btn-inverse" type="button"><i class="glyphicon glyphicon-stop"></i> Stop all</a>
+								<a href="<?php echo site_url('/control/startall/'.$name); ?>" class="btn btn-mini btn-success" type="button"><i class="glyphicon glyphicon-play"></i> Start all</a>
+								<a href="<?php echo site_url('/control/restartall/'.$name); ?>" class="btn btn-mini btn-primary" type="button"><i class="glyphicon glyphicon-refresh"></i> Restart all</a>
 							</span>
 							<?php
 							}
@@ -139,10 +141,10 @@
 									</div//-->
 									<div class="actions">
 										<?php if($status=='RUNNING'){ ?>
-										<a href="<?php echo site_url('/control/stop/'.$name.'/'.$item_name);?>" class="btn btn-mini btn-inverse" type="button"><i class="icon-stop icon-white"></i></a>
-										<a href="<?php echo site_url('/control/restart/'.$name.'/'.$item_name);?>" class="btn btn-mini btn-inverse" type="button"><i class="icon-refresh icon-white"></i></a>
+										<a href="<?php echo site_url('/control/stop/'.$name.'/'.$item_name);?>" class="btn btn-mini btn-inverse" type="button"><i class="glyphicon glyphicon-stop"></i></a>
+										<a href="<?php echo site_url('/control/restart/'.$name.'/'.$item_name);?>" class="btn btn-mini btn-inverse" type="button"><i class="glyphicon glyphicon-refresh"></i></a>
 										<?php } if($status=='STOPPED' || $status == 'EXITED' || $status=='FATAL'){ ?>
-										<a href="<?php echo site_url('/control/start/'.$name.'/'.$item_name);?>" class="btn btn-mini btn-success" type="button"><i class="icon-play icon-white"></i></a>
+										<a href="<?php echo site_url('/control/start/'.$name.'/'.$item_name);?>" class="btn btn-mini btn-success" type="button"><i class="glyphicon glyphicon-play"></i></a>
 										<?php } ?>
 									</div>
 								</td>
